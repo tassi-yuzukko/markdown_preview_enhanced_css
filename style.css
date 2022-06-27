@@ -1,0 +1,370 @@
+
+html body {
+
+  --main-color: #222222;
+  --bk-color: #ffffff;
+//    --sub-color: #535499;
+//    --border-color: rgb(215, 215, 241);
+//  --border-color: rgb(226, 215, 241);
+//   --sub-color: #538999;
+//   --border-color: rgb(215, 235, 241);
+  --sub-color: #474747c0;
+  --border-color: rgb(219, 217, 217);
+  --link-color: rgb(39, 133, 177);
+
+  font-family: 'メイリオ';
+  line-height: 2em;
+  
+//   --main-color:rgb(255, 254, 239);
+//   --bk-color: #242427;
+//   --border-color: #777777;
+//   --link-color: #00C7FF;
+  color:var(--main-color);
+  background-color:var(--bk-color);
+
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'メイリオ';
+  }
+
+  h1{
+    margin: 50px 0 25px ;
+    padding: 0.5em;/*文字周りの余白*/
+    color:var(--border-color);
+    text-shadow:1px 1px 0px var(--sub-color);
+    background: var(--sub-color); /*背景色*/
+  }
+
+  // *****************************************************************
+  // お手本：https://saruwakakun.com/html-css/reference/h-design
+  // *****************************************************************
+
+/*   h2{
+    position: relative;
+    padding: 0.1em 0.5em;
+    background: -moz-linear-gradient(to right, var(--border-color), transparent);
+    background: -webkit-linear-gradient(to right, var(--border-color), transparent);
+    background: linear-gradient(to right, var(--border-color), transparent);
+    color: var(--main-color);
+  } */
+
+/*   h2{
+    position: relative;
+    padding: 0.25em 0;
+  }
+  h2:after {
+    content: "";
+    display: block;
+    height: 7px;
+    background: -moz-linear-gradient(to right, var(--border-color), transparent);
+    background: -webkit-linear-gradient(to right, var(--border-color), transparent);
+    background: linear-gradient(to right, var(--border-color), transparent);
+  } */
+
+/*   h2{
+    background: linear-gradient(transparent 80%, var(--border-color) 80%);
+  } */
+
+  h2 {
+    margin: 70px 0 20px ;
+    padding: 0.5em;/*文字周りの余白*/
+    color: var(--main-color);/*文字色*/
+    background: var(--border-color);/*背景色*/
+    border-left: solid 5px var(--sub-color);/*左線（実線 太さ 色）*/
+  }
+
+  h3{
+    margin: 50px 0 20px ;
+    padding: 5px 0 0 5px;/*文字周りの余白*/
+    color:var(--main-color);
+    border-bottom: 2px solid var(--sub-color);
+    border-left: solid 2px var(--sub-color);/*左線（実線 太さ 色）*/
+    // border-top: 2px solid var(--border-color);
+    // border-right: 2px solid var(--border-color);
+  }
+
+
+  h4{
+    margin: 50px 0 20px 5px;
+    color:var(--main-color);
+    border-bottom: 1px dashed var(--border-color);
+  }
+  h5{
+    margin: 50px 0 10px 5px;
+    color:var(--main-color);
+    text-decoration: underline;
+  }
+  h6{
+    margin: 25px 0 10px 5px;
+    color:var(--sub-color);
+  }
+
+  p{
+    margin: 0px 0 20px 10px;
+  }
+
+  strong {
+    font-weight: 800;
+    color:var(--main-color);
+  }
+
+  div ul li {
+    padding-bottom:0px;
+    }
+
+  a {
+      text-decoration: underline;
+      color:var(--link-color);
+    }
+
+    blockquote {
+      position: relative;
+      padding: 10px 15px 10px 60px;
+      box-sizing: border-box;
+      font-style: italic;
+      background: #efefef;
+      color: #555;
+  }
+
+  blockquote:before{
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      left: 15px;
+      vertical-align: middle;
+      content: "\f10d";
+      font-family: FontAwesome;
+      color: #cfcfcf;
+      font-size: 30px;
+      line-height: 1;
+  }
+
+  blockquote p {
+      padding: 0;
+      margin: 10px 0;
+      line-height: 1.7;
+  }
+
+  blockquote cite {
+      display: block;
+      text-align: right;
+      color: #888888;
+      font-size: 0.9em;
+  }
+
+  table{
+      border-collapse: collapse;
+      font-size: medium;
+      word-break : break-all;
+  }
+  th{
+      padding: 6px;
+      text-align: left;
+      vertical-align: top;
+      color: rgb(51, 51, 51);
+      background-color: #eee;
+      border: 1px solid #b9b9b9;
+  }
+  td{
+      padding: 6px;
+      color: var(--main-color);
+      background-color: var(--bk-color);
+      border: 1px solid #c0a6a6;
+      font-size: 80%;
+      line-height: 2;
+      padding-bottom: 10px;
+  }
+  .inverse {
+      background: #272822;
+      color: #ffffff;
+      text-shadow: 0 0 20px var(--main-color);
+  }
+  /* Two-column layout */
+  .left-column {
+      width: 50%;
+      float: left;
+  }
+  .right-column {
+      width: 50%;
+      float: right;
+  }
+  /* Two-column layout */
+  .left-column-side {
+      color: #777;
+      width: 20%;
+      height: 92%;
+      float: left;
+  }
+  .left-column-side h2:last-of-type, .left-column-side h3:last-child, .left-column-side h4:last-child {
+      color: #000;
+
+  }
+  .right-column-side {
+      width: 75%;
+      float: right;
+      padding-top: 1em;
+  }
+  .clear{
+      clear: both;
+  }
+  code{
+      color:rgb(192, 19, 19);
+      background-color: rgba(192, 192, 190, 0.87);
+      padding:0px 2px 0px 2px;
+      border-radius: 5px;
+  }
+
+  .red_td{
+    color: red
+  }
+}
+// Changing the color of the tab (when the hover).
+.tab:hover{
+  background-color: #f5f5f5;
+}
+
+// Change the transparency of the non-active pane.
+.vertical{
+  .pane{
+    opacity: 0.70;
+    &.active{
+      opacity: 1.0;
+    }
+  }
+}
+
+// Optimize the font for Japanese
+// Default font << Hiragino + Meiryo
+div.title,
+div.tree-view-scroller,
+div.status-bar-left{
+  font-family:'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif
+}
+.markdown-preview.markdown-preview {
+  --my-font: "HG創英角ﾎﾟｯﾌﾟ体";
+  // --my-font-body: "メイリオ";
+
+  .reveal div.left {
+    float: left;
+    z-index: -10;
+    width: 45%;
+  }
+
+  .reveal div.right {
+    float: right;
+    z-index: -10;
+    width: 55%;
+  }
+
+  .reveal .slides {
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  .reveal .slides section>* {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .reveal section img {
+  border: 0;
+  box-shadow: none;
+  }
+
+  .reveal .slides *{
+    font-family: var(--my-font);
+    color: var(--main-color);
+  }
+
+  .reveal .slides p,
+  .reveal .slides li{
+    font-family: var(--my-font-body);
+    font-size: 24pt;
+    margin: 10px 0 20px;
+  }
+
+  .reveal .slides li{
+    margin-left: 70px;
+  }
+
+  .reveal .slides th{
+      text-align: left;
+      vertical-align: top;
+      color: rgb(51, 51, 51);
+      background-color: #eee;
+      border: 1px solid #b9b9b9;
+      font-family: var(--my-font-body);
+  }
+  .reveal .slides td{
+      color: var(--main-color);
+      background-color: var(--bk-color);
+      border: 1px solid #c0a6a6;
+      font-size: 80%;
+      font-family: var(--my-font-body);
+      padding: 0px 4px 0px 4px;
+  }
+
+  .reveal .slides b{
+  color: #ff8c00;
+  font-family: var(--my-font-body);
+  font-size: 24pt;
+  }
+
+  .reveal h2,
+  .reveal h3,
+  .reveal h4,
+  .reveal h5,
+  .reveal h6{
+    font-family: var(--my-font-body);
+  /*font-size: 1.55em;*/
+  /*margin: 0 0 60px 0;*/
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+  display: block;
+  margin: 40px 10px;
+  }
+
+  .reveal h1{
+    text-align: center;
+    margin: 100px;
+    text-transform: none; // 勝手に大文字になるのを小文字に修正
+    background: var(--bk-color); /*背景色*/
+  }
+  .reveal h3{
+    text-decoration:underline;
+  }
+
+  /*
+  .reveal p span.slide-title {
+  color: #e49436;
+  font-size: 1.55em;
+  margin: 0 0 60px 0;
+  font-family: "Montserrat", Impact, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+  display: block;
+  }
+  */
+
+  .reveal blockquote {
+    position: relative;
+    padding: 10px 15px 10px 60px;
+    font-style: italic;
+    background: #efefef;
+    color: #555;
+  }
+}
+
+// サイドバーTOCを左上にする
+.md-sidebar-toc.md-sidebar-toc {
+    padding-top: 40px;
+  }
+  
+  #sidebar-toc-btn {
+    bottom: unset;
+    top: 8px;
+  }
